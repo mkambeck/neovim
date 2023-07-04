@@ -51,3 +51,9 @@ The **lua** directory contains all files that are used to configure Neovim with 
 ### Plugin
 
 The **plugin** directory normally contains all plugins that are used within Neovim. Because we use Packer to install plugins, all plugins are compiled into one single file and loaded automatically.
+
+## Dependencies
+
+- [homebrew](https://brew.sh/)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+
