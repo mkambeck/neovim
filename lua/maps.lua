@@ -1,5 +1,6 @@
 local keymap = vim.keymap
 
+-- Do not yank with x
 keymap.set('n', 'x', '"_x')
 
 -- Increment/decrement
@@ -11,6 +12,9 @@ keymap.set('n', 'dw', 'vb"_d')
 
 -- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')
+
+-- Exit with jj
+keymap.set('i', 'jj', '<Esc>', { noremap = true })
 
 -- New tab
 keymap.set('n', 'te', ':tabedit')
