@@ -18,21 +18,13 @@ This contains all basic configuration like visual options etc..
 
 This contains the syntax highlighting configuration that is used in Neovim.
 
-#### macos.lua
-
-This contains MacOS-specific configuration related to clipboard usage, and it is dependent on the operating system being used.
-
 #### maps.lua
 
 This contains all Neovim keymappings that are used in the different keyboard modes.
 
 #### plugins.lua
 
-This contains the Packer definition which packages should be installed and placed under the **plugin** directory.
-
-#### windows.lua
-
-Contains Windows specific configuration regarding clipboard usage and is used dependent on the operating system used.
+This contains the Lazy definition which packages should be installed.
 
 ## Directories
 
@@ -41,19 +33,15 @@ Contains Windows specific configuration regarding clipboard usage and is used de
 The **after** directory is used to make small changes or configurations to already installed plugins. The following plugins are already configured:
 
 - ./config/nvim/after/plugin/lualine.rc.lua
-- ./config/nvim/after/plugin/neosolarized.rc.lua
-- ./config/nvim/after/plugin/telescope.rc.lua
+- ./config/nvim/after/plugin/solarized-osaka.rc.lua
 
 ### Lua
 
 The **lua** directory contains all files that are used to configure Neovim with Lua commands. The files are loaded within the **init.lua** file in the root directory of the Neovim configuration.
 
-### Plugin
-
-The **plugin** directory normally contains all plugins that are used within Neovim. Because we use Packer to install plugins, all plugins are compiled into one single file and loaded automatically.
-
 ## Dependencies
 
 - [homebrew](https://brew.sh/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [fd](https://github.com/sharkdp/fd)
 
