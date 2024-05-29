@@ -1,4 +1,5 @@
 vim.cmd('autocmd!')
+vim.cmd("language en_US")
 
 vim.g.mapleader = " " 
 
